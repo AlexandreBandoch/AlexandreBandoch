@@ -9,7 +9,6 @@
 				<center><h3>Contador de Cliques:</h3><center>  
 				<center><h1><p id = "Contador">0</p></h1></center>
 				<button onclick = "mostracount()"> Clique </button>
-				<button onclick = "resetacount()"> Resetar </button>
 			</body>
 
 		<script>
@@ -21,23 +20,11 @@
 		})();
 		
 		
-		var reset = (function () {
-		
-		var counter = 0;
-		return function() {return counter = 0;}
-		})();
-		
-		
 		function mostracount(){
 		
 		document.getElementById("Contador").innerHTML = count();
 		}
 		
-		
-		function resetacount(){
-		
-		document.getElementById("Contador").innerHTML = reset();
-		}
 		
 		</script>
 
